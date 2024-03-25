@@ -1,0 +1,58 @@
+.nav {
+   
+    background-color: black;
+    padding: 20px 0 20px 36px;
+
+}
+
+.logo {
+width: 113.33px;
+        height: 43px;
+        padding: 13px 0 13px 0;
+        background-color: transparent;
+        margin-bottom: 20px;
+    &__image {
+        width: 113.33px;
+        height: 17px;
+        color: #181818;
+    }
+
+}
+
+.burger {
+    width: 20px;
+    height: 36px;
+    padding: 13px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    &__line {
+        display: inline-block;
+        width: 100%;
+        height: 1px;
+        background-color: #D3D3D3;
+
+    }
+}
+
+.menu {
+    display: block;
+    visibility: visible; 
+
+    &__list {
+        padding: 18px 0 10px 0;
+    }
+
+    &__item {
+        padding: 5px 0;
+        margin-bottom: 16px;
+    }
+
+    &__link {
+        color: #FFFFFF;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+    }
+}

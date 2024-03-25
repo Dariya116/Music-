@@ -1,0 +1,110 @@
+body {
+  background-color: black;
+}
+
+.login {
+  background-color: #fff;
+  width: 366px;
+  height: 439px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 12px;
+  margin-top: 320.5px;
+  margin-left: 777px;
+
+  input {
+    border: none;
+    border-bottom: 1px solid #d0cece;
+
+    width: 278.5px;
+
+    font-family: 'Stratos-Regular', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: -0.003em;
+    text-align: left;
+  }
+  p {
+    color: red;
+  }
+
+  &__button1 {
+    width: 278px;
+    height: 52px;
+    border-radius: 6px;
+    border: 0;
+    font-family: 'Stratos-Regular', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: -0.003em;
+    text-align: center;
+    color: #fff;
+    background: #580ea2;
+    &:hover {
+      background: #3f007d;
+    }
+
+    &_active {
+      width: 278px;
+      height: 52px;
+      border-radius: 6px;
+      border: 0;
+      font-family: 'Stratos-Regular', sans-serif;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 24px;
+      letter-spacing: -0.003em;
+      text-align: center;
+      color: #fff;
+      background: #271a58;
+    }
+  }
+
+  &__button2 {
+    width: 278px;
+    height: 52px;
+    border-radius: 6px;
+    border: 1px solid #d0cece;
+    font-family: 'Stratos-Regular', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: -0.003em;
+    text-align: center;
+    background-color: white;
+    color: black;
+    &:hover {
+      background-color: #f4f5f6;
+    }
+    &:active {
+      background-color: #d0cece;
+    }
+  }
+}
+.logo {
+  width: 113.33px;
+  height: 43px;
+  padding: 13px 0 13px 0;
+  background-color: transparent;
+  margin-bottom: 20px;
+  &__image {
+    width: 113.33px;
+    height: 17px;
+    color: #181818;
+  }
+}
+.error {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 350px;
+  margin-top: 550px;
+  border-radius: 6px;
+  //   padding: 7px;
+  background-color: #f8f5fc;
+}
