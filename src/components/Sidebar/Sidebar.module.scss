@@ -1,0 +1,60 @@
+.sidebar {
+  &__personal {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 36px 0 15px 0;
+  }
+
+  &__personal_name {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #ffffff;
+    margin-right: 16px;
+  }
+
+  &__avatar {
+    width: 43px;
+    height: 43px;
+    background-color: black;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  &__block {
+    height: 100%;
+    padding: 240px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-right: 150px;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__item {
+    width: 250px;
+    height: 150px;
+
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__link {
+    width: 100%;
+    height: 100%;
+  }
+
+  &__img {
+    width: 100%;
+    height: auto;
+  }
+}

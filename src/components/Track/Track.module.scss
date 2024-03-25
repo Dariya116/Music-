@@ -1,0 +1,137 @@
+.playlist__item {
+  width: 100%;
+  display: block;
+  margin-bottom: 12px;
+}
+
+.track {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+
+  &__title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 447px;
+  }
+
+  &__title_image {
+    width: 51px;
+    height: 51px;
+    padding: 16px;
+    background: #313131;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 17px;
+  }
+
+  &__title_svg {
+    width: 18px;
+    height: 17px;
+    fill: transparent;
+    stroke: #4e4e4e;
+
+    &_active {
+      width: 16px;
+      height: 16px;
+      color: #b672ff;
+      border-radius: 100%;
+    }
+  }
+
+  //&__title-text {}
+
+  &__title_link {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #ffffff;
+  }
+
+  &__title_span {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #4e4e4e;
+  }
+
+  &__author {
+    width: 321px;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  &__author_link {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #ffffff;
+    text-align: left;
+  }
+
+  &__album {
+    width: 245px;
+  }
+
+  &__album_link {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #696969;
+  }
+
+  //&__time {}
+
+  &__time_svg {
+    width: 16px;
+    height: 14px;
+    margin-right: 17px;
+    fill: transparent;
+    stroke: #696969;
+    cursor: pointer;
+  }
+
+  &__time_text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: right;
+    color: #696969;
+  }
+}
+.active {
+  scale: 2;
+}
+
+.active_icon {
+  animation: play 0.8s ease-in-out 0s infinite normal forwards;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+}
+
+@keyframes play {
+  0% {
+    transform: scale(0.5);
+    transform-origin: center;
+  }
+
+  50% {
+    transform: scale(1);
+    transform-origin: center;
+  }
+
+  100% {
+    transform: scale(0.5);
+    transform-origin: center;
+  }
+}
